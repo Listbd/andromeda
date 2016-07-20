@@ -7,3 +7,10 @@
 <button (click)="changeBarColor()">Change bar color</button>
 <input type="text" [value]="myname" (keyup.enter)="myname = $event.target.value">
 <input type="text" [(ngModel)]="myname">
+
+<ul>
+  <li *ngFor="#customer of customers">
+    <app-about>Ig</app-about>
+    {{customer.name}}
+  </li>
+</ul>
