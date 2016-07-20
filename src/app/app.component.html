@@ -1,6 +1,9 @@
 <h1>
   {{title}} clandestine
 </h1>
+
+<app-about></app-about>
+
 <div [style.background]="mycolor">
    Who am i? {{myname}}
 </div>
@@ -8,9 +11,8 @@
 <input type="text" [value]="myname" (keyup.enter)="myname = $event.target.value">
 <input type="text" [(ngModel)]="myname">
 
-<ul>
-  <li *ngFor="#customer of customers">
-    <app-about>Ig</app-about>
-    {{customer.name}}
-  </li>
-</ul>
+
+<app-customers></app-customers>
+<app-customers></app-customers>
+<app-customers></app-customers>
+<app-customers></app-customers>
