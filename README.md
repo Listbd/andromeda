@@ -2,6 +2,10 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.9.
 
+## Source
+Generally following along with pluralsight course 
+https://app.pluralsight.com/player?course=play-by-play-angular-2-quick-start-john-papa-ward-bell&author=ward-bell&name=play-by-play-angular-2-quick-start-john-papa-ward-bell-m5&clip=0&mode=live
+
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
