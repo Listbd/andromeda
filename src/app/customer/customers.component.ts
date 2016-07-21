@@ -12,11 +12,15 @@ import { CustomerService } from './customer.service';
     providers: [CustomerService]
 })
 export class CustomersComponent implements OnInit {
-    customers: Observable<any[]>;
+    customers: any[];
     
     constructor(private _customerService: CustomerService) {}
 
     ngOnInit() {
-        this.customers = this._customerService.getCustomers();
+        this._customerService.getCustomers_RxObservable()
+            .subscribe(
+                (customers) => this.customers = customers,
+                (err) => { console.log(err); }
+            );
     }
 }
